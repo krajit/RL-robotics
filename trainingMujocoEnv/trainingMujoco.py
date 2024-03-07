@@ -5,8 +5,8 @@ ray.shutdown()
 
 ray.init()
 
-tune.run("DQN",
-         config={"env":"CartPole-v1"},
+tune.run("PPO",
+         config={"env":"HalfCheetah-v4"}
     )
 
 
